@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html">Order</a>
+    <a href="login.html">Logout</a>
+</nav>
+
+<div class="content">
+
+    <h1>Our Menu</h1>
+
+    <div class="menu">
+
+        <div class="card">
+            <h3>Espresso</h3>
+            <p>₱120</p>
+        </div>
+
+        <div class="card">
+            <h3>Cappuccino</h3>
+            <p>₱180</p>
+        </div>
+
+        <div class="card">
+            <h3>Caramel Latte</h3>
+            <p>₱220</p>
+        </div>
+
+        <div class="card">
+            <h3>Mocha</h3>
+            <p>₱200</p>
+        </div>
+
+    </div>
+
+    <button id="orderBtn">
+        Order Now
+    </button>
+
+</div>
+
+<!-- Modal -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2>Place Your Order</h2>
+
+        <select>
+            <option>Espresso</option>
+            <option>Cappuccino</option>
+            <option>Caramel Latte</option>
+            <option>Mocha</option>
+        </select>
+
+        <input type="number" placeholder="Quantity">
+
+        <button onclick="confirmOrder()">
+            Confirm Order
+        </button>
+
+    </div>
+
+</div>
+
+<script src="website.js"></script>
+
+</body>
+</html>
